@@ -25,6 +25,6 @@ All City data from 2010 U.S. Census Bureau
 
 Edits: 
  
--  Info box looks good, but the rollover percentage should indicate race designation (even though it’s in the color legend) – so: “50% white” 
--          Info box style changes: * Enlarge city name  * Spaces between lines * add “police” before “officers” * cut out excess space under bar charts * change info box background color so it stands out more from map color – I’d make it darker and change text color if necessary. 
+-  Info box looks good, but the rollover percentage should indicate race designation (even though it’s in the color legend) – so: “50% white”
+ * add “police” before “officers” * cut out excess space under bar charts 
 

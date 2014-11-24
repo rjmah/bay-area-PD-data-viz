@@ -18,7 +18,7 @@
   background:#A19F9F;
   color:#0e0e0e;
   font-size:14px;
-  line-height:18px;
+  line-height:20px;
   }
 .custom-popup .leaflet-popup-tip-container {
   width:310px;
@@ -552,7 +552,13 @@ var geoJson = L.geoJson(geoJsonData, {
   onEachFeature: function (feature, layer) { 
             if (feature.properties && feature.properties.title){
 
-                layer.bindPopup('<b>' + feature.properties.title +'<\/b>' +  '<br \/>' + feature.properties.pop + ' '+ 'residents' + '<br \/>'  + feature.properties.copcount +' officers' +
+                layer.bindPopup(
+
+                '<div style="font-size:15px">' +
+                    '<b>' + feature.properties.title +'<\/b>'+ '<\/div>'
+
+
+                      + feature.properties.pop + ' '+ 'residents' + '<br \/>'  + feature.properties.copcount +' officers' +
                 '<br \/>' + 'Police dept. is' + ' ' + feature.properties.pctmorewhite +
                 ' pct. more white than residents'
                 + 
