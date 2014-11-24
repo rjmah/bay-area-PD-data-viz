@@ -186,6 +186,22 @@ var geoJsonData = {
     },
     {
       "type": "Feature",
+      "properties": {"title": "Hayward",
+        "chart": "hayward.html",
+        "pop": "144,186",
+        "copcount": 174,
+        "pctmorewhite": 40,
+        "color":  "#006d2c"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.080,
+          37.668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "properties": {"title": "Vacaville",
       "chart": "vacaville.html",
        "pop": "92,428",
@@ -237,7 +253,7 @@ var geoJsonData = {
       "properties": {"title": "San Jose",
       "chart": "sanjose.html",
        "pop": "945,942",
-      "copcount": "1,386",
+      "copcount": 1386,
       "pctmorewhite": 29,
     "color": "#74c476"},
       "geometry": {
@@ -537,10 +553,10 @@ var geoJson = L.geoJson(geoJsonData, {
             if (feature.properties && feature.properties.title){
 
                 layer.bindPopup('<b>' + feature.properties.title +'<\/b>' +  '<br \/>' + feature.properties.pop + ' '+ 'residents' + '<br \/>'  + feature.properties.copcount +' officers' +
-                '<br \/>' + feature.properties.pctmorewhite +
-                ' pct. points more white than residents' 
+                '<br \/>' + 'Police dept. is' + ' ' + feature.properties.pctmorewhite +
+                ' pct. more white than residents'
                 + 
-                '<iframe src="' + './' + feature.properties.chart  + '"' + 'width=' + 300 + '"' + 'height=' + 100+ '"' + '" scrolling="no" frameborder="0"></iframe>'
+                '<iframe src="' + './' + feature.properties.chart  + '"' + 'width=' + 300 + '"' + 'height=' + 80 + '"' + '" scrolling="no" frameborder="0"></iframe>'
                 );
             }
   
