@@ -1,9 +1,9 @@
-color scheme by percentage pts gap
-0-9 #edf8e9
-10-19 #bae4b3
-20-29 #74c476
-30-39 #31a354
-40-52 #006d2c
+The color of the circles are determined the percentage points more white the police department is over the city population.
+0-9 percentage points more white: #edf8e9
+10-19 percentage points more white: #bae4b3
+20-29 percentage points more white: #74c476
+30-39 percentage points more white: #31a354
+40-52 percentage points more white: #006d2c
 
 
 In addition, please send me a brief statement explaining methodology, reporting issues, etc., to include in the post. Overall, is the Bay Area doing better/worse in this measurement than the rest of the country? 
@@ -12,7 +12,7 @@ Hayward PD data from http://www.ci.hayward.ca.us/NEWS/2014/CALEA_Final_Report.pd
 2013 CALEA Assessment Report 
 	- white, black, hispanic, and other
 
-All other PD data from 2007 Bureau of Justice Statistics
+All other police department data comes from 2007 Bureau of Justice Statistics
 * * I have designated as “other” 
 - American Indian or Alaskan
 - Native Hawaiian or Pacific Island
@@ -30,5 +30,8 @@ All city population data is from 2010 U.S. Census Bureau
 
 
 Edits: 
--  Info box looks good, but the rollover percentage should indicate race designation (even though it’s in the color legend) – so: “50% white”
+-  Info box looks good, but the rollover percentage should indicate race designation
+- margin for “Police officers” - make sure it’s not cut off
+- opacity, ensure that popup can still close
+
 
