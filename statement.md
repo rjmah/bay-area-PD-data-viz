@@ -26,5 +26,4 @@ All City data from 2010 U.S. Census Bureau
 Edits: 
  
 -  Info box looks good, but the rollover percentage should indicate race designation (even though it’s in the color legend) – so: “50% white”
- * add “police” before “officers” * cut out excess space under bar charts 
 
