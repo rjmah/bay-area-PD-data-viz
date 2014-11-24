@@ -1,13 +1,5 @@
 *notes for essay*
 
-mapbox and leaflet.js together?
-i can link to mapbox.js without leaflet and load leaflet separately 
-
-d3 stacked bar charts in an iframe in each tooltip
-
-
-**Stacked percentage bar chart**
-d3
 
 Data source:
 cops = 2007 Law Enforcement Management and Administrative Statistics (LEMAS) survey by the USDOJ Bureau of Justice Statistics

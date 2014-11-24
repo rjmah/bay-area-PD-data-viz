@@ -18,10 +18,10 @@
   background:#D8D8D8;
   color:#0e0e0e;
   font-size:14px;
-  line-height:20px;
+  line-height:18px;
   }
 .custom-popup .leaflet-popup-tip-container {
-  width:325px;
+  width:310px;
   height:15px;
   }
 .custom-popup .leaflet-popup-tip {
@@ -539,7 +539,8 @@ var geoJson = L.geoJson(geoJsonData, {
                 layer.bindPopup('<b>' + feature.properties.title +'<\/b>' +  '<br \/>' + feature.properties.pop + ' '+ 'residents' + '<br \/>'  + feature.properties.copcount +' officers' +
                 '<br \/>' + feature.properties.pctmorewhite +
                 ' pct. points more white than residents' 
-                + '<iframe src="' + './' + feature.properties.chart  + '"' + 'width=' + 300 + '"' + 'height=' + 50 + '"' + '" scrolling="no" frameborder="0"></iframe>'
+                + 
+                '<iframe src="' + './' + feature.properties.chart  + '"' + 'width=' + 300 + '"' + 'height=' + 100+ '"' + '" scrolling="no" frameborder="0"></iframe>'
                 );
             }
   
