@@ -1,0 +1,48 @@
+/* main */
+body {
+    margin:0;
+    padding:0;
+}
+#map {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* popup */
+.custom-popup .leaflet-popup-content-wrapper {
+    background:#F7F7C3;
+    color:#0e0e0e;
+    font-size:14px;
+    line-height:20px;
+    /*opacity: 0.9;*/
+}
+.custom-popup .leaflet-popup-tip-container {
+    width:310px;
+    height:15px;
+}
+.custom-popup .leaflet-popup-tip {
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-top:15px solid transparent;
+}
+
+/* legend */
+#legend {
+    display:none;
+}
+
+.legend label, .legend span {
+    display:block;
+    float:left;
+    height:15px;
+    width:20%;
+    text-align:center;
+    font-size:9px;
+    color:#808080;
+}
