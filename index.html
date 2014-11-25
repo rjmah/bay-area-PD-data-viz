@@ -74,7 +74,7 @@
   <script>
 L.mapbox.accessToken = 'pk.eyJ1Ijoia2FyaSIsImEiOiJMa0lZd01RIn0.MYzIAmgnaEHBBeQQsXUquw';
   // initialize the map
-  var map = L.mapbox.map('map').setView([37.7, -122.1], 8);
+  var map = L.mapbox.map('map').setView([37.7, -122.1], 10);
 
   // load a tile layer
 L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png', {
@@ -566,7 +566,6 @@ var geoJson = L.geoJson(geoJsonData, {
                   '<iframe src="./' + feature.properties.chart  + '" ' + 'width="300" height="70" scrolling="no" frameborder="0"></iframe>'
                 );
             }
-  
         }
     
 }).addTo(map);
