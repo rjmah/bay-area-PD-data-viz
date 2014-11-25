@@ -75,7 +75,7 @@ window.onload = function() {
     function drawGraph(city) {
         var margins = {
             top: 12,
-            left: 70,
+            left: 75,
             right: 24,
             bottom: 12
         },
@@ -94,7 +94,8 @@ window.onload = function() {
                 // axis (the stacked amount) is y
                 return {
                     y: o.pct,
-                    x: o.group
+                    x: o.group,
+                    name: d.name
                 };
             });
         }),
@@ -108,7 +109,8 @@ window.onload = function() {
                 return {
                     x: d.y,
                     y: d.x,
-                    x0: d.y0
+                    x0: d.y0,
+                    name: d.name
                 };
             });
         }),
@@ -165,14 +167,16 @@ window.onload = function() {
             return xScale(d.x);
         })
         .on('mouseover', function (d) {
-            var xPos = parseFloat(d3.select(this).attr('x')) / 2 + width / 2;
-            var yPos = parseFloat(d3.select(this).attr('y')) + yScale.rangeBand() / 2;
+            var graphOffset = d3.select('.d3-graph').node().getBoundingClientRect();
+            var offset = d3.mouse(this);
+            var xPos = graphOffset.left + offset[0] + margins.left;
+            var yPos = graphOffset.top + offset[1];
 
             d3.select('#tooltip')
                 .style('left', xPos + 'px')
                 .style('top', yPos + 'px')
                 .select('#value')
-                .text(d.x + '%');
+                .text(d.x + '% ' + d.name);
 
             d3.select('#tooltip').classed('hidden', false);
         })
