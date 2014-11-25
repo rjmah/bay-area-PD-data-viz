@@ -211,20 +211,20 @@ svg.append('g')
     .attr('class', 'axis')
     .call(yAxis);
 
-svg.append('rect')
-    .attr('fill', 'white')
-    .attr('width', 160)
-    .attr('height', 30 * dataset.length)
-    .attr('x', width + margins.left)
-    .attr('y', 0);
+//svg.append('rect')
+//    .attr('fill', 'white')
+//    .attr('width', 160)
+//    .attr('height', 30 * dataset.length)
+//    .attr('x', width + margins.left)
+//    .attr('y', 0);
 
-series.forEach(function (s, i) {
-    svg.append('text')
-        .attr('fill', 'black')
-        .attr('x', width + margins.left + 8)
-        .attr('y', i * 24 + 24)
-        .text(s);
-});
+//series.forEach(function (s, i) {
+//    svg.append('text')
+//        .attr('fill', 'black')
+//        .attr('x', width + margins.left + 8)
+//        .attr('y', i * 24 + 24)
+//        .text(s);
+//});
   </script>
 </body>
 </html>
